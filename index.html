@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/index.js"></script>
+    <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        mono: ["ui-monospace", "monospace"],
+      },
+    },
+    corePlugins: {
+      preflight: false,
+    },
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,9 +47,9 @@
     <div class=" pt-2 mx-auto container">
       <a href="#welcome"><img src="/imgs/start.svg" class="mx-auto w-1/2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       </a> </div>
-    <section class="mt-32 md:mt-48" id="welcome">
+    <section class="mt-32 md:mt-64" id="welcome">
     <div class="container mx-auto mt-12" data-aos="fade-up">
-      <iframe class="rounded-xl mx-auto mb-20  " controls="controls" autoplay="autoplay" width="830" height="520" src="https://www.youtube.com/embed/GclaRPkWdkY?controls=0" 
+      <iframe class="rounded-xl mx-auto mb-20" controls="controls" autoplay="autoplay" width="1290" height="720" src="https://www.youtube.com/embed/GclaRPkWdkY?controls=0" 
       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
   
       </iframe>
@@ -37,7 +61,7 @@
   <div class="p-4 text-center text-neutral-200">
     © 2023 Copyright:
     <a
-      class="text-neutral-800 dark:text-neutral-400"
+      class="text-neutral-800 "
       href="#"
       >Equipe de suporte</a>
   </div>
